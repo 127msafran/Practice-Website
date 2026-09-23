@@ -1,0 +1,51 @@
+body {
+    background-color: #728ee0;
+    color: indianred;
+}
+
+#text {
+    background-color: indianred;
+    color: #728ee0;
+    font-size: xxx-large;
+    border: 3px dashed #1347df;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 5px;
+}
+
+.random {
+    background-color: #033dfa;
+    color: aqua;
+    font-family: Calibri, sans-serif;
+}
+
+img {
+    width: 1000px;
+    height: 500px;
+}
+
+a[href*="https://www.frhsd.com/"] {
+    color: lime;
+}
+
+ul>li:first-child {
+    color: fuchsia;
+}
+
+a:visited {
+    color: beige;
+}
+
+li:hover {
+    background-color: navy;
+}
+
+div {
+    li {
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    }
+}
+
+li + li {
+    color: lightgreen;
+}
