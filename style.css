@@ -1,6 +1,7 @@
 body {
     background-color: #728ee0;
     color: indianred;
+    font-family: Avant Garde, sans-serif;
 }
 
 #text {
@@ -47,5 +48,38 @@ div {
 }
 
 li + li {
-    color: lightgreen;
+    color: #007993;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #b6bfc8;
+    border-radius: 10px;
+    border: 3px dashed #1347df;
+    margin: 10px;
+}
+
+#gridBox {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    gap: 12px;
+    img {
+        grid-column: span 3;
+        grid-row: span 3;
+        height: 100%;
+        width: 100%;
+    }
+    p {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    a {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
