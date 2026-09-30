@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>First Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
-<body>
+<body onload="loading()">
     <h1 id="top" class="random">First Website: HCSSCWDAI</h1>
     <a href="https://www.frhsd.com/">link to frhsd.com</a>
     <p>Visit my github <a href="https://github.com/127msafran">here</a></p>
@@ -35,7 +36,13 @@
             <li class="list-item">My favorite color is red</li>
         </ul>
     </div>
+    <label for="textbox">Change webpage title: </label>
+    <input type="text" id="textbox" name="text" placeholder="Title name">
+    <button onclick="clicked()">Click title</button>
     <p>I <strong>love</strong> Comp Sci</p>
+    <label for="localButton">Increase locally</label>
+    <button id="localButton" onclick="increaseLocally()">0</button>
+    <button id="sessionButton" onclick="increaseSession()">0</button>
     <p>My social security number is <em>123-45-6789</em></p>
     <p><q>I want my name to be remembered in the history books of hockey and to be up there with the greatest of all time... You've got to be a winner to be up there with the best of the best and that's where I want to be.</q> - Connor McDavid</p>
     <div id="gridBox">
