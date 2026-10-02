@@ -8,7 +8,7 @@ function increaseLocally() {
 }
 
 function increaseSession() {
-    sessionStorage.setItem("num", document.getElementById("sessionButton").innerText);
+    sessionStorage.setItem("num", JSON.parse(document.getElementById("sessionButton").innerText) + 1);
     document.getElementById("sessionButton").innerText = JSON.parse(document.getElementById("sessionButton").innerText) + 1;
 }
 
