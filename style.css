@@ -1,36 +1,63 @@
 body {
-    background-color: #728ee0;
-    color: indianred;
+    background-color: #e0e0e0;
+    color: #142b3b;
     font-family: Avant Garde, sans-serif;
+    border-width: thick;
+    border-style: dashed;
+    border-color: #CE1126;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px
+}
+
+#line-spacer {
+    border: none;
+    height: 2px;
+    background-color: #CE1126;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+th, td {
+    border: 2px dashed #CE1126;
+    padding: 10px;
 }
 
 #text {
-    background-color: indianred;
-    color: #728ee0;
     font-size: xxx-large;
-    border: 3px dashed #1347df;
+    border: 3px dashed #CE1126;
     border-radius: 15px;
     padding: 10px;
     margin: 10px 5px;
 }
 
-.random {
-    background-color: #033dfa;
-    color: aqua;
-    font-family: Calibri, sans-serif;
-}
-
 img {
-    width: 1000px;
-    height: 500px;
+    width: 100%;
 }
 
 a[href*="https://www.frhsd.com/"] {
-    color: lime;
+    color: #CE1126;
 }
 
-ul>li:first-child {
-    color: fuchsia;
+ol>li {
+    color: royalblue;
+}
+
+ul>li {
+    color: royalblue;
 }
 
 a:visited {
@@ -38,29 +65,23 @@ a:visited {
 }
 
 li:hover {
-    background-color: navy;
-}
-
-div {
-    li {
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-    }
+    background-color: #0038A8;
+    color: #CE1126;
+    font-weight: bold;
 }
 
 li + li {
-    color: #007993;
+    color: #CE1126;
 }
 
 .list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #b6bfc8;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 10px;
-    border: 3px dashed #1347df;
+    border: 3px dashed #CE1126;
     margin: 10px;
+    width: 25%;
+    padding-left: 10px;
 }
 
 #gridBox {
