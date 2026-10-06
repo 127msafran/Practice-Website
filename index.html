@@ -7,49 +7,70 @@
     <script src="index.js"></script>
 </head>
 <body onload="loading()">
-    <h1 id="top" class="random" title="Honors Computer Science Senior Capstone: Web, Data, and AI">First Website: <abbr>HCSSCWDAI</abbr></h1>
-    <h2 style="margin-bottom: 0; margin-top: 10px">Links</h2>
-    <div id="links">
-        <a href="https://www.frhsd.com/">Link to frhsd.com</a>
-        <p>Visit my github <a href="https://github.com/127msafran">here</a></p>
+    <div id="header">
+        <h1 id="top" class="random">First Website: <abbr title="Honors Computer Science Senior Capstone: Web, Data, and AI">HCSSCWDAI</abbr></h1>
     </div>
-    <label for="textbox">Change webpage title: </label>
-    <input type="text" id="textbox" name="text" placeholder="Title name">
-    <button onclick="clicked()" style="margin-bottom: 10px">Change title</button>
+    <div style="">
+        <label for="textbox">Change webpage title: </label>
+        <input type="text" id="textbox" name="text" placeholder="Title name">
+        <button onclick="clicked()" style="margin-bottom: 10px">Change title</button>
+        <button id="localButton" onclick="increaseLocally()">0</button>
+        <button id="sessionButton" onclick="increaseSession()">0</button>
+    </div>
     <div>
         <img src="https://s.yimg.com/lo/mysterio/api/0e38f52ef2d08f0a78432ee1920f55bdc4859aaba4088c7b585b8341853603c7/lightyear_networkapi/resizefill_w1200_h675%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fny_post_sports_articles_389%2F97f7490e360d994e5434b9324bf1a410.jpg" alt="hockey"/>
     </div>
     <hr id="line-spacer"/>
     <p id="text">Hello world!</p>
-    <table id="table">
-        <tr>
-            <th>Favorite Video Games</th>
-            <th>Favorite Colors</th>
-        </tr>
-        <tr>
-            <td>Forza Horizon 5</td>
-            <td>Red</td>
-        </tr>
-    </table>
-    <div>
-        <h3>3 favorite activities</h3>
-        <ol>
-            <li class="list-item">Play video games</li>
-            <li class="list-item">Watch youtube</li>
-            <li class="list-item">Code</li>
-        </ol>
-        <h3>3 fun facts</h3>
-        <ul>
-            <li class="list-item">I play ice hockey</li>
-            <li class="list-item">I have a younger brother</li>
-            <li class="list-item">My favorite color is red</li>
-        </ul>
+    <div style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 10px">
+        <div class="card" style="width: 65%;">
+            <h2>About me</h2>
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center">
+                <div class="mason">
+                    <table id="table">
+                        <tr>
+                            <th>Favorite Video Games</th>
+                            <th>Favorite Colors</th>
+                        </tr>
+                        <tr>
+                            <td>Forza Horizon 5</td>
+                            <td>Red</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mason">
+                    <h3>3 favorite activities</h3>
+                    <ol>
+                        <li class="list-item">Play video games</li>
+                        <li class="list-item">Watch YouTube</li>
+                        <li class="list-item">Code</li>
+                    </ol>
+                </div>
+                <div class="mason">
+                    <h3>3 fun facts</h3>
+                    <ul>
+                        <li class="list-item">I play ice hockey</li>
+                        <li class="list-item">I have a younger brother</li>
+                        <li class="list-item">My favorite color is red</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="width: 35%" class="card">
+            <h2>Links</h2>
+            <div id="links">
+                <div class="link-box">
+                    <img src="https://resources.finalsite.net/images/f_auto,q_auto/v1689082772/frhsdcom/wd3sxqioxgkmldbhfkon/FRHSDSealBlackwithPuncbackground.png" class="logo" alt="Frhsd logo"/>
+                    <a href="https://www.frhsd.com/">Link to frhsd.com</a>
+                </div>
+                <div class="link-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="logo" alt="Github logo">
+                    <p style="margin: 0">Visit my github <a href="https://github.com/127msafran">here</a></p>
+                </div>
+            </div>
+        </div>
     </div>
     <p>I <strong>love</strong> Comp Sci</p>
-    <label for="localButton">Increase locally</label>
-    <button id="localButton" onclick="increaseLocally()">0</button>
-    <label for="localButton">Increase session</label>
-    <button id="sessionButton" onclick="increaseSession()">0</button>
     <p>My social security number is <em>123-45-6789</em></p>
     <p><q>I want my name to be remembered in the history books of hockey and to be up there with the greatest of all time... You've got to be a winner to be up there with the best of the best and that's where I want to be.</q> - Connor McDavid</p>
     <div id="gridBox">

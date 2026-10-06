@@ -1,20 +1,39 @@
 body {
     background-color: #e0e0e0;
     color: #142b3b;
-    font-family: Avant Garde, sans-serif;
-    border-width: thick;
-    border-style: dashed;
-    border-color: #CE1126;
+    font-family: "Avant Garde", Avantgarde, sans-serif;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
 }
 
 #links {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     gap: 20px
+}
+
+.mason {
+    width: 30%;
+    margin: 10px;
+}
+
+.link-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+.logo {
+    width: 100px;
 }
 
 #line-spacer {
@@ -74,14 +93,19 @@ li + li {
     color: #CE1126;
 }
 
-.list-item {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.card {
+    border: 3px solid #CE1126;
     border-radius: 10px;
-    border: 3px dashed #CE1126;
-    margin: 10px;
-    width: 25%;
-    padding-left: 10px;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+
+ol, ul {
+    margin: 0;
 }
 
 #gridBox {
